@@ -37,7 +37,7 @@ make clean
 --use-openjpeg=no \
 --use-a52=no \
 --prefix="${2}/build/${1}" \
---extra-cflags="-I${TOOLCHAIN_PREFIX}/include $CFLAGS" \
+--extra-cflags="-I${TOOLCHAIN_PREFIX}/include $CFLAGS -DGPAC_ANDROID" \
 --extra-ldflags="-L${TOOLCHAIN_PREFIX}/lib $LDFLAGS" \
 --extra-cxxflags="$CXX_FLAGS" || exit 1
 
