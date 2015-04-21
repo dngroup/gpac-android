@@ -13,5 +13,5 @@ NUMBER_OF_CORES=$(nproc)
 HOST_UNAME=$(uname -m)
 TARGET_OS=linux
 
-CFLAGS=''#-U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-strict-overflow -fstack-protector-all'
-LDFLAGS=''#-Wl,-z,relro -Wl,-z,now -pie'
+CFLAGS='-U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-strict-overflow -fstack-protector-all'
+LDFLAGS='-Wl,-z,relro -Wl,-z,now -pie'
